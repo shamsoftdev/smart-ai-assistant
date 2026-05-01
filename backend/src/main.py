@@ -28,7 +28,7 @@ app.add_middleware(
 # ROUTERS
 # ---------------------------
 
-@app.get("/")
+@app.get("/",include_in_schema=False)
 def root():
     return {
         "message": "Smart AI Assistant API is running 🚀"

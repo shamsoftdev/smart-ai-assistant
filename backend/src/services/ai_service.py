@@ -107,7 +107,7 @@ Now respond to the latest user message.
 
             except Exception:
                 time.sleep(2)
-
+ 
         # fallback
         return ResumeResponse(
             analysis={"error": "Failed to parse AI response", "raw": raw}
